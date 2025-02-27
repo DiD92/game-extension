@@ -1,0 +1,23 @@
+[
+    {
+        "_id": "stationary_guard",
+        "default": {
+            "movement": "stationary",
+            "action": "do_nothing"
+        }
+    },
+    {
+        "_id": "vanguard_fighter",
+        "default": {
+            "movement": "vanguard",
+            "action": "attack_closer_enemy"
+        },
+        "conditional": {
+            "low_htp": {
+                "priority": 1,
+                "movement": "stationary",
+                "action": "heal_oneself"
+            }
+        }
+    }
+]

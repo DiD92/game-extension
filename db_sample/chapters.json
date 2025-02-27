@@ -1,0 +1,167 @@
+[
+    {
+        "_id": "test_chapter_0",
+        "code": "1",
+        "title": "The first test chapter",
+        "background_id": "flags",
+        "segments": [
+            {
+                "type": "dialogue",
+                "params": {
+                    "key": "chapter_start",
+                    "section": "",
+                    "background_id": "field_0",
+                    "music_id": ""
+                }
+            },
+            {
+                "type": "battle",
+                "params": {
+                    "map_key": "test_map",
+                    "music_id": "map_2",
+                    "player_army": "test_army_0",
+                    "enemy_armies": [
+                        "bandits"
+                    ],
+                    "allied_armies": [],
+                    "active_armies": [
+                        "test_army_0",
+                        "bandits"
+                    ],
+                    "starting_army": "test_army_0",
+                    "victory_condition": {
+                        "type": "defeat_units",
+                        "params": {
+                            "bandits": [
+                                "test_unit_1"
+                            ]
+                        }
+                    },
+                    "defeat_condition": {
+                        "type": "turn_reached",
+                        "params": 200
+                    },
+                    "cursor_start": "5:5",
+                    "unit_placements": {
+                        "test_army_0": [
+                            {
+                                "unit_id": "test_unit_0",
+                                "positions": [
+                                    "5:5"
+                                ],
+                                "personality": "stationary_guard"
+                            },
+                            {
+                                "unit_id": "test_unit_1",
+                                "positions": [
+                                    "5:6"
+                                ],
+                                "personality": "stationary_guard"
+                            }
+                        ],
+                        "bandits": [
+                            {
+                                "unit_id": "test_unit_0",
+                                "positions": [
+                                    "4:4"
+                                ],
+                                "personality": "stationary_guard"
+                            },
+                            {
+                                "unit_id": "test_unit_1",
+                                "positions": [
+                                    "2:4"
+                                ],
+                                "personality": "stationary_guard"
+                            }
+                        ]
+                    }
+                }
+            }
+        ],
+        "next_chapter": "test_chapter_1"
+    },
+    {
+        "_id": "test_chapter_1",
+        "code": "2",
+        "title": "Test second test chapter",
+        "background_id": "flames",
+        "segments": [
+            {
+                "type": "dialogue",
+                "params": {
+                    "key": "chapter_start",
+                    "section": "",
+                    "background_id": "field_0",
+                    "music_id": ""
+                }
+            },
+            {
+                "type": "battle",
+                "params": {
+                    "map_key": "test_map",
+                    "music_id": "map_2",
+                    "player_army": "test_army_0",
+                    "enemy_armies": [
+                        "cultists"
+                    ],
+                    "allied_armies": [],
+                    "active_armies": [
+                        "test_army_0",
+                        "cultists"
+                    ],
+                    "starting_army": "test_army_0",
+                    "victory_condition": {
+                        "type": "defeat_units",
+                        "params": {
+                            "cultists": [
+                                "test_unit_1"
+                            ]
+                        }
+                    },
+                    "defeat_condition": {
+                        "type": "turn_reached",
+                        "params": 200
+                    },
+                    "cursor_start": "5:5",
+                    "unit_placements": {
+                        "test_army_0": [
+                            {
+                                "unit_id": "test_unit_0",
+                                "positions": [
+                                    "5:5"
+                                ],
+                                "personality": "stationary_guard"
+                            },
+                            {
+                                "unit_id": "test_unit_1",
+                                "positions": [
+                                    "5:6"
+                                ],
+                                "personality": "stationary_guard"
+                            }
+                        ],
+                        "cultists": [
+                            {
+                                "unit_id": "test_unit_0",
+                                "positions": [
+                                    "4:4",
+                                    "6:4"
+                                ],
+                                "personality": "stationary_guard"
+                            },
+                            {
+                                "unit_id": "test_unit_1",
+                                "positions": [
+                                    "2:4"
+                                ],
+                                "personality": "stationary_guard"
+                            }
+                        ]
+                    }
+                }
+            }
+        ],
+        "next_chapter": "main_menu"
+    }
+]

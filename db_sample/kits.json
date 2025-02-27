@@ -1,0 +1,36 @@
+[
+    {
+        "_id": "test_kit_0",
+        "name": "Test",
+        "description": "Kit description",
+        "htp_mod": 10,
+        "str_mod": 4,
+        "mag_mod": 1,
+        "def_mod": 2,
+        "spt_mod": 1,
+        "agi_mod": 2,
+        "mov_mod": 0,
+        "weapon_slots": 2,
+        "magic_slots": 0,
+        "support_slots": 2,
+        "item_slots": 2,
+        "skill_slots": 0
+    },
+    {
+        "_id": "test_kit_1",
+        "name": "Test",
+        "description": "Kit description",
+        "htp_mod": 10,
+        "str_mod": 4,
+        "mag_mod": 1,
+        "def_mod": 2,
+        "spt_mod": 1,
+        "agi_mod": 2,
+        "mov_mod": 0,
+        "weapon_slots": 0,
+        "magic_slots": 2,
+        "support_slots": 2,
+        "item_slots": 2,
+        "skill_slots": 0
+    }
+]

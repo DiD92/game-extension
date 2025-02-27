@@ -1,0 +1,39 @@
+[
+    {
+        "_id": "heal_10_htp",
+        "type": "health",
+        "params": {
+            "target": "htp",
+            "power": 10
+        }
+    },
+    {
+        "_id": "heal_20_htp",
+        "type": "health",
+        "params": {
+            "target": "htp",
+            "power": 20
+        }
+    },
+    {
+        "_id": "plus_one_all_stats",
+        "type": "parent",
+        "params": ["plus_one_str"]
+    },
+    {
+        "_id": "plus_one_str",
+        "type": "stat_modifier",
+        "params": {
+            "stat": "str",
+            "amount": 1
+        }
+    },
+    {
+        "_id": "plus_four_str",
+        "type": "stat_modifier",
+        "params": {
+            "stat": "str",
+            "amount": 4
+        }
+    }
+]

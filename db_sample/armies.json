@@ -1,0 +1,20 @@
+[
+    {
+        "_id": "test_army_0",
+        "name": "Test Army",
+        "description": "Army of testers",
+        "banner_id": "test_army"
+    },
+    {
+        "_id": "bandits",
+        "name": "Bandits",
+        "description": "Group of ruffians",
+        "banner_id": "bandits"
+    },
+    {
+        "_id": "cultists",
+        "name": "Cultists",
+        "description": "Sinister dark magicians",
+        "banner_id": "cultists"
+    }
+]

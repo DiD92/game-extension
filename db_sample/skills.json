@@ -1,0 +1,22 @@
+[
+    {
+        "_id": "cheerfull",
+        "name": "Cheerfull",
+        "description": "Always a smile, if adjacent to an ally at turn start +1 to all stats",
+        "effect_id": "plus_one_all_stats",
+        "trigger": "passive",
+        "trigger_condition": "none",
+        "slot_type": "personal",
+        "inheritable": false
+    },
+    {
+        "_id": "desperate",
+        "name": "Desperate",
+        "description": "Fearing death, pushes the user to its limits, +4 str at start of combat if htp is < 50%",
+        "effect_id": "plus_four_str",
+        "trigger": "combat_start",
+        "trigger_condition": "htp_value",
+        "slot_type": "general",
+        "inheritable": false
+    }
+]

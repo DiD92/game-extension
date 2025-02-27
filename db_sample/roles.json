@@ -1,0 +1,16 @@
+[
+    {
+        "_id": "test_role_0",
+        "name": "Test",
+        "description": "Role description",
+        "htp_mod": 10,
+        "str_mod": 4,
+        "mag_mod": 1,
+        "def_mod": 2,
+        "spt_mod": 1,
+        "agi_mod": 2,
+        "mov_mod": 0,
+        "valor_type": "none",
+        "role_tags": []
+    }
+]

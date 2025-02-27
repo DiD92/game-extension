@@ -1,0 +1,12 @@
+[alias]
+build-json-debug      = "build --features save_json,verify_database"
+build-bitcode-debug   = "build --features save_bin,verify_database"
+
+build-json-release    = "build --features save_json --release"
+build-bitcode-release = "build --features save_bin --release"
+
+test-json             = "test --features save_json,verify_database"
+test-bitcode          = "test --features save_bin,verify_database"
+
+clippy-json           = "clippy --features save_json,verify_database"
+clippy-bitcode        = "clippy --features save_bin,verify_database"
