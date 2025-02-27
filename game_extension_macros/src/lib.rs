@@ -1,7 +1,7 @@
 use derive::quote_from_data;
 use proc_macro::TokenStream;
 use quote::quote;
-use syn::{parse_macro_input, DeriveInput};
+use syn::{DeriveInput, parse_macro_input};
 
 mod derive;
 

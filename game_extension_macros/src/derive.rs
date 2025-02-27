@@ -1,6 +1,6 @@
 use proc_macro2::TokenStream as TokenStream2;
 use quote::quote;
-use syn::{spanned::Spanned, Data, DataStruct};
+use syn::{Data, DataStruct, spanned::Spanned};
 
 pub(crate) fn quote_from_data(data: &Data) -> Result<TokenStream2, syn::Error> {
     match data {
