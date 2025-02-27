@@ -1,0 +1,59 @@
+name: Test game-extensions
+
+on:
+  push:
+    branches: [ "master", "develop" ]
+  pull_request:
+      branches: [ "master", "develop" ]
+env:
+      CARGO_TERM_COLOR: always
+
+jobs:
+  fmt:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - run: cargo fmt --all --check
+
+  check_json:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - run: cargo check --features "save_json","verify_database" --all-targets
+
+  check_bitcode:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - run: cargo check --features "save_bin","verify_database" --all-targets
+
+  clippy_json:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - run: cargo clippy --features "save_json","verify_database" --all-targets -- -D warnings
+
+  clippy_bitcode:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - run: cargo clippy --features "save_bin","verify_database" --all-targets -- -D warnings
+
+  test_json:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - run: cargo test --features "save_json","verify_database" --all-targets
+
+  test_bitcode:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - run: cargo test --features "save_bin","verify_database" --all-targets
